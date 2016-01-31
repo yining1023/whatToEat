@@ -13,6 +13,8 @@ window.onload = function() {
     var arr = ['watermelon','rice','ramen','poultry_leg', 'mushroom', 'lollipop', 'hamburger', 'grape', 'fried_shrimp', 'donut', 'curry', 'corn', 'dango', 'bread', 'apple', 'pizza'];
     var num = Math.floor(Math.random()*16);
     result.innerHTML = "You'll eat "+arr[num]+" today!";
+
+    document.getElementById("emoji").className = "em em-"+arr[num];
     setTimeout(function(){
             result.className = "result result-show";
         }, 1000);
