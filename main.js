@@ -1,6 +1,6 @@
 window.onload = function() {
     var myShakeEvent = new Shake({
-        threshold: 15
+        threshold: 10
     });
 
     myShakeEvent.start();
@@ -10,9 +10,9 @@ window.onload = function() {
     function shakeEventDidOccur () {
     var result = document.getElementById("result");
     result.className = "result";
-    var arr = ['Thinkpad Notebook','Iphone6 Plus','Great dinner','Football'];
-    var num = Math.floor(Math.random()*4);
-    result.innerHTML = "Congratulations, you get "+arr[num]+"!";
+    var arr = ['watermelon','rice','ramen','poultry_leg', 'mushroom', 'lollipop', 'hamburger', 'grape', 'fried_shrimp', 'donut', 'curry', 'corn', 'dango', 'bread', 'apple', 'pizza'];
+    var num = Math.floor(Math.random()*16);
+    result.innerHTML = "You'll eat "+arr[num]+" today!";
     setTimeout(function(){
             result.className = "result result-show";
         }, 1000);
