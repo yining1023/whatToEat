@@ -10,7 +10,7 @@ window.onload = function() {
     function shakeEventDidOccur () {
     var result = document.getElementById("result");
     result.className = "result";
-    var arr = ['watermelon','rice','ramen','poultry_leg', 'mushroom', 'lollipop', 'hamburger', 'grape', 'fried_shrimp', 'donut', 'curry', 'corn', 'dango', 'bread', 'apple', 'pizza'];
+    var arr = ['watermelon','rice','ramen','poultry_leg', 'mushroom', 'lollipop', 'hamburger', 'grapes', 'fried_shrimp', 'donut', 'curry', 'corn', 'dango', 'bread', 'apple', 'pizza'];
     var num = Math.floor(Math.random()*16);
     result.innerHTML = "You'll eat "+arr[num]+" today!";
 
